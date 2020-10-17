@@ -8,8 +8,13 @@ function getMeaning() {
   )
     .then((res) => res.json())
     .then((jsn) => {
+        if(jsn[0]){
         let meaning = jsn[0].meanings[0].definitions[0].definition;
-        $('.sub.header').text(meaning)
+          $('.sub.header').text(meaning)
+      }
+        else {
+          $('.sub.header').text("Error")
+      }
     });
 }
 
