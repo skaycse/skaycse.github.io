@@ -10,7 +10,7 @@ function getMeaning() {
     .then((jsn) => {
         if(jsn[0]){
         let meaning = jsn[0].meanings[0].definitions[0].definition;
-          $('.sub.header').text(meaning)
+          $('.sub.header').html(`div class="ui green inverted statistic"><div class="value year">${meaning}</div></div>`)
       }
         else {
           $('.sub.header').html('<div class="ui red inverted statistic"><div class="value year">Are you sure this is a valid word?</div></div>')
