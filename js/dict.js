@@ -13,7 +13,7 @@ function getMeaning() {
           $('.sub.header').text(meaning)
       }
         else {
-          $('.sub.header').text("Error")
+          $('.sub.header').text("Are you sure this is a valid word?")
       }
     });
 }
