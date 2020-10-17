@@ -13,7 +13,7 @@ function getMeaning() {
           $('.sub.header').text(meaning)
       }
         else {
-          $('.sub.header').html('<div class="ui red inverted statistic">Are you sure this is a valid word?</div>')
+          $('.sub.header').html('<div class="ui red inverted statistic"><div class="value year">Are you sure this is a valid word?</div></div>')
       }
     });
 }
